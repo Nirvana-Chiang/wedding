@@ -14,15 +14,28 @@
 }
 
 .cover-div {
-  height: 100vh; 
+  height: 100vh;
   position: relative;
-  background-image: url('/assets/cover01.jpg');
-  /* background-size: 100% 100%; */
-  background-size: cover;
-  background-position: 50% 14%;
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
+  background: none; /* 移除原本背景 */
+  overflow: hidden;
 }
+
+
+.cover-div::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url('./../assets/cover01.jpg');
+  background-size: cover;
+  background-position: center 14%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+
 
 .welcome-div {
   color: var(--deep-pink);
