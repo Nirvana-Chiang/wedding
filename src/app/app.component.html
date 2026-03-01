@@ -1,0 +1,48 @@
+<div class="cover-div">
+  <div class="welcome-div">
+    <span class="welcome-txt" style="display: block;">WELCOME</span>
+    <span class="welcome-ch">宥成 & 昱珊</span>
+  </div>
+  <div class="date-div">
+    <button class="hash-button" (click)="openMap()"># 地圖導航</button>
+    <div class="hash-group">
+      <button class="hash-button" (click)="goToSection('notice')"># 注意事項</button>
+      <button class="hash-button" (click)="goToSection('steps')"># 入場指引</button>
+      <button class="hash-button" (click)="goToSection('seat')"># 座位檢索</button>
+    </div>
+    <div class="date-txt">03.21 (Sat.) 18:30</div>
+  </div>
+</div>
+<div class="container bg-pink" id="notice" >
+  <p class="main-title"># 注意事項</p>
+  <ol class="remind-list mt36">
+    <li><span class="error-text">不建議點</span>悲歌，會被新郎切掉</li>
+    <li><span class="error-text">請勿著</span>整身白色，因新娘穿著較簡約</li>
+    <li>先行入座，使用<span class="error-text">拍立得</span>進行簽到</li>
+    <li>部分桌次供有底片相機，請盡情使用</li>
+    <li>本場次無攝影，CCD隨機出沒</li>
+    <li>入場費<span class="error-text">公道價600</span> or <span class="error-text">專輯一張</span></li>
+    <li>預約喜餅者請<span class="error-text">另備現金</span>600</li>
+  </ol>
+</div>
+<div class="container bg-blue" id="steps" >
+  <p class="main-title"># 入場指引</p>
+  <div class="w100 remind-div">
+    <ol class="remind-list mr24" style="margin-bottom: 60px;">
+      <li>入座</li>
+      <li>簽到</li>
+      <li>合照</li>
+    </ol>
+  </div>
+  <app-step-gif></app-step-gif>
+  <!-- <div class="sign-desk">
+    <div class="f20 fw800 mb24 mt40">
+        # 簽到桌配置<br>
+    </div>
+    <img src="assets/desk.jpg" alt="">
+  </div> -->
+  <!-- <app-seat-svg></app-seat-svg> -->
+</div>
+<div class="container bg-pink" style="min-height: 540px;" id="seat">
+  <app-seat-search></app-seat-search>
+</div>

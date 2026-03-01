@@ -1,0 +1,88 @@
+.remind-div {
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+}
+
+.sign-desk {
+  padding: 0px 24px;
+  padding-top: 40px;
+}
+
+.sign-desk img {
+    width: 100%;
+}
+
+.cover-div {
+  height: 100vh; 
+  position: relative;
+  background-image: url('/assets/cover01.jpg');
+  /* background-size: 100% 100%; */
+  background-size: 310%;
+  background-position: 50% 14%;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+
+.welcome-div {
+  color: var(--deep-pink);
+  position: absolute;
+  top: 108px;
+  left: 32px;
+}
+
+.welcome-txt {
+  /* font-family: "Cascadia Mono", sans-serif; */
+  font-family: "Righteous", sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.welcome-ch {
+  font-family: "DotGothic16", sans-serif;
+  font-size: 17px;
+}
+
+.date-div {
+  position: absolute;
+  bottom: 36px;
+  right: 20px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.date-txt {
+  /* font-family: "Cascadia Mono", sans-serif; */
+  font-family: "Righteous", sans-serif;
+  background-color: var(--deep-pink);
+  color: var(--warm-white);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.hash-button {
+  font-family: "DotGothic16", sans-serif;
+  background-color: var(--warm-white);
+  color: var(--light-pink);
+  font-size: 14px;
+  font-family: "DotGothic16", sans-serif;
+  border: none;
+  padding: 4px;
+  margin-left: 4px;
+
+}
+
+.hash-group {
+  display: flex;
+  gap: 6px;
+}
+
+.error-text {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--light-blue);  /* 👈 可以改顏色 */
+  text-underline-offset: 4px; /* 👈 距離文字的距離 */
+}

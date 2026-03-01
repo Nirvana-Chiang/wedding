@@ -1,0 +1,35 @@
+button {
+  /* 重置原生樣式 */
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0 8px 8px 0;
+  cursor: pointer;
+  
+  /* 自訂樣式 */
+  min-width: 80px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #E63462;
+  border: solid 2px #E63462;
+  background-color: var(--warm-white);
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button.checked {
+  color: #E63462;
+  background-color: var(--light-pink);
+}
+
+.blue-txt {
+  color: var(--light-blue);
+}

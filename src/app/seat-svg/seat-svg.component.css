@@ -1,0 +1,8 @@
+.origin-gray {
+  fill: #ccc;
+  transition: fill 0.3s ease;  /* 平滑過渡 */
+}
+
+.origin-gray.selected {
+  fill: var(--main-yellow)
+}

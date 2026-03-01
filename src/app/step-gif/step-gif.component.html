@@ -1,0 +1,39 @@
+<div class="scroll-wrapper" #wrapper>
+  <div class="sticky-box">
+    <ng-container [ngSwitch]="currentStep">
+      <div *ngSwitchCase="0">
+        <div class="f20 fw800 mb24">
+            # 入座<br>
+            <span class="f16 fw600">座位見下方指示</span>
+        </div>
+        <img src="assets/desk-gif-01.svg" alt="">
+      </div>
+      <div *ngSwitchCase="1">
+        <div class="f20 fw800 mb24">
+            # 簽到<br>
+            <span class="f16 fw600">1. 拍立得簽到(每人1張，可多人合影)</span>
+        </div>
+        <img src="assets/desk-gif-02.svg" alt="">
+      </div>
+      <div *ngSwitchCase="2">
+        <div class="f20 fw800 mb24">
+            # 簽到<br>
+            <span class="f16 fw600">2. 投入禮金/CD(公道價600, 喜餅再600)</span>
+        </div>
+        <img src="assets/desk-gif-02.svg" alt="">
+      </div>
+      <div *ngSwitchCase="3">
+        <div class="f20 fw800 mb24">
+            # 拍照<br>
+            <span class="f16 fw600">與新人合影(自選)</span>
+        </div>
+        <img src="assets/desk-gif-03.svg" alt="">
+      </div>
+    </ng-container>
+  </div>
+
+  <!-- <div class="bg-content">
+    <img src="assets/" style="height: auto;">
+  </div> -->
+
+</div>

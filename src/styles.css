@@ -1,0 +1,120 @@
+:root {
+    --warm-white : #F6F3EE;
+  --main-yellow: #F3A712;
+  --deep-pink: #E63462;
+  --light-pink: #F9B3D1;
+  --light-blue: #9DD9D2;
+  --deep-blue: #1434A4;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+.test {
+    boreder: solid 1px #333;
+}
+
+.bg-pink {
+    background-color: var(--deep-pink);
+    color: var(--warm-white);
+}
+
+.bg-blue {
+    background-color: var(--deep-blue);
+    color: #ddd;
+}
+
+.bg-gray {
+    background-color: #eee;
+}
+
+
+
+.container {
+    padding: 24px;
+}
+
+.main-title {
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.remind-list {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 2.4;
+    letter-spacing: 1px;
+}
+
+.f12 {
+    font-size: 12px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.f20 {
+    font-size: 20px;
+}
+
+.f24 {
+    font-size: 24px;
+}
+
+.fw800 {
+    font-weight: 800;
+}
+
+.fw600 {
+    font-weight: 600;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.mt24 {
+    margin-top: 24px;
+}
+
+.mt36 {
+    margin-top: 36px;
+}
+
+.mt40 {
+    margin-top: 40px;
+}
+
+.mr24 {
+    margin-right: 24px;
+}
+
+.mr24 {
+    margin-right: 24px;
+}
+
+.mb16 {
+    margin-bottom: 16px;
+}
+
+.mb24 {
+    margin-bottom: 24px;
+}
+
+.mb36 {
+    margin-bottom: 36px;
+}
+
+.pd24 {
+    padding: 0 24px;
+}

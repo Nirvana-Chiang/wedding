@@ -1,0 +1,27 @@
+.scroll-wrapper {
+  height: 400vh; 
+  position: relative;
+  background-image: url('/assets/test.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sticky-box {
+  position: sticky;
+  margin: 0px 24px;
+  height: 480px;
+  top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 32px;
+  z-index: 10;
+}
+
+.sticky-box img {
+    width: 100%;
+}
+
+.bg-content {
+  margin-top: 320px;  /* 改匹配新高度，讓有足夠滾動空間 */
+}
