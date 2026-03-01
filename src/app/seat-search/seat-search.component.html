@@ -1,34 +1,38 @@
 <p class="main-title"># 座位檢索</p>
-<div *ngIf="showQuestion" class="mt24">
-    <p class="fw16 fw600 mb16"># 你是誰的朋友</p>
-    <button 
-         *ngFor="let item of q1list"
-        (click)="setQ1Ans(item.key)"
-        [ngClass]="{'checked' : item.key == q1Ans}"
-    >{{ item.value }}</button>
+<div class="inline right">
+    <div *ngIf="showQuestion" class="mt24">
+        <p class="fw16 fw600 mb16"># 你是誰的朋友</p>
+        <button 
+            *ngFor="let item of q1list"
+            (click)="setQ1Ans(item.key)"
+            [ngClass]="{'checked' : item.key == q1Ans}"
+        >{{ item.value }}</button>
+    </div>
+    <div *ngIf="showQuestion >= 2" class="mt24">
+        <p class="fw16 fw600 mb16"># {{ q1Ans === '1' ? '你是他的...' : '怎麼認識的' }}</p>
+        <button 
+            *ngFor="let item of q2list"
+            (click)="setQ2Ans(item.key)"
+            [ngClass]="{'checked' : item.key == q2Ans}"
+        >{{ item.value }}</button>
+    </div>
+    <div *ngIf="showQuestion >= 3" class="mt24">
+        <p class="fw16 fw600 mb16"># 你搭飛機來的嗎</p>
+        <button 
+            *ngFor="let item of q23list"
+            (click)="setQ3Ans(item.key)"
+            [ngClass]="{'checked' : item.key == q3Ans}"
+        >{{ item.value }}</button>
+    </div>
 </div>
-<div *ngIf="showQuestion >= 2" class="mt24">
-    <p class="fw16 fw600 mb16"># 怎麼認識的</p>
-    <button 
-         *ngFor="let item of q2list"
-        (click)="setQ2Ans(item.key)"
-        [ngClass]="{'checked' : item.key == q2Ans}"
-    >{{ item.value }}</button>
-</div>
-<div *ngIf="showQuestion >= 3" class="mt24">
-    <p class="fw16 fw600 mb16"># 你搭飛機來的嗎</p>
-    <button 
-         *ngFor="let item of q23list"
-        (click)="setQ3Ans(item.key)"
-        [ngClass]="{'checked' : item.key == q3Ans}"
-    >{{ item.value }}</button>
-</div>
-<div *ngIf="isShowSeat" class="mt40">
-    <p class="f16 fw800">WELCOME</p>
-    <p class="f24 fw600"> {{ answer?.ans }} 桌</p>
-    <p class="f16 fw600 blue-txt mt24" *ngIf="answer?.cookies"> =>&nbsp;&nbsp;&nbsp;&nbsp;
-        {{ answer?.cookies }} 請拿喜餅</p>
-    <div class="w100 mt24">
-        <app-seat-svg [id]="answer?.id || ['']"></app-seat-svg>
+<div class="inline">
+    <div *ngIf="isShowSeat" class="mt40">
+        <p class="f16 fw800">WELCOME</p>
+        <p class="f24 fw600"> {{ answer?.ans }} 桌</p>
+        <p class="f16 fw600 blue-txt mt24" *ngIf="answer?.cookies"> =>&nbsp;&nbsp;&nbsp;&nbsp;
+            {{ answer?.cookies }} 請拿喜餅</p>
+        <div class="w100 mt24">
+            <app-seat-svg [id]="answer?.id || ['']"></app-seat-svg>
+        </div>
     </div>
 </div>

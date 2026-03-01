@@ -2,7 +2,7 @@
     --warm-white : #F6F3EE;
   --main-yellow: #F3A712;
   --deep-pink: #E63462;
-  --light-pink: #F9B3D1;
+  --light-pink: #faa1c7;
   --light-blue: #9DD9D2;
   --deep-blue: #1434A4;
 }
@@ -117,4 +117,10 @@ body {
 
 .pd24 {
     padding: 0 24px;
+}
+
+@media (width > 768px) {
+    .container {
+        padding: 36px 20vw;
+    }
 }

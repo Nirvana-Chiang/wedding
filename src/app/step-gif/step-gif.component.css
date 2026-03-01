@@ -9,8 +9,8 @@
 .sticky-box {
   position: sticky;
   margin: 0px 24px;
-  height: 480px;
-  top: 80px;
+  height: 70vh;
+  top: 15vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -24,4 +24,10 @@
 
 .bg-content {
   margin-top: 320px;  /* 改匹配新高度，讓有足夠滾動空間 */
+}
+
+@media (width > 768px) {
+  .sticky-box {
+    max-width: 360px;
+  }
 }

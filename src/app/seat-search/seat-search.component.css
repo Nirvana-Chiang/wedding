@@ -27,9 +27,20 @@ button:hover {
 
 button.checked {
   color: #E63462;
-  background-color: var(--light-pink);
+  background-color: var(--light-blue);
 }
 
 .blue-txt {
   color: var(--light-blue);
+}
+
+
+@media (width > 768px) {
+ .inline {
+    display: inline-block;
+    vertical-align: top; 
+ }
+ .inline.right {
+    width: 30dvw;
+  }
 }

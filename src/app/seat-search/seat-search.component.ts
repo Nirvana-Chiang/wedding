@@ -22,6 +22,7 @@ export class SeatSearchComponent {
     this.q1Ans = key;
     this.q2Ans = '0'; this.q3Ans = '0';
     const isNoNext = this.checkAns();
+    this.q2list = key == '1' ? q1list : q2list;
     this.showQuestion = isNoNext ? 1 : 2;
   }
 
@@ -65,6 +66,13 @@ const qlist: Option[] = [
   { key: '3', value: '雙方'},
 ];
 
+const q1list: Option[] = [
+  { key: '1', value: '同事'},
+  { key: '2', value: '銀行家'},
+  { key: '3', value: '大學同學'},
+  { key: '4', value: '大學學生會'},
+];
+
 const q2list: Option[] = [
   { key: '1', value: '高中社團'},
   { key: '2', value: '高中共同朋友'},
@@ -72,7 +80,6 @@ const q2list: Option[] = [
   { key: '4', value: '大學學生會'},
   { key: '5', value: '金馬'},
   { key: '6', value: '蘭嶼'},
-
 ];
 
 const q23list: Option[] = [
@@ -83,11 +90,14 @@ const q23list: Option[] = [
 const AnsList: Record<string, Answer> = {
   300: { ans: '中刊人', id: ['rect-r3l', 'rect-r3r'], cookies: '榕、琪、芊'},
   210: { ans: '中刊人', id: ['rect-r3l', 'rect-r3r'], cookies: '榕、琪、芊'}, 
-  220: { ans: '交友小包廂', id: ['rect-small'], }, 
-  232: { ans: '交友小包廂', id: ['rect-small'], cookies: '所有人'}, 
+  220: { ans: '小包廂', id: ['rect-small'], }, 
+  232: { ans: '小包廂', id: ['rect-small'], cookies: '所有人'}, 
   231: { ans: '漂亮女生', id: ['rect-r2r'], }, 
   240: { ans: '學生會', id: ['rect-r1l', 'rect-r1r'], cookies: '尚毅夫、Rainy、+><'}, 
   250: { ans: '漂亮女生', id: ['rect-r2r'], }, 
   260: { ans: '漂亮女生', id: ['rect-r2r'], }, 
-  
+  110: { ans: '大包廂', id: ['rect-big'], }, 
+  120: { ans: '銀行家', id: ['rect-l1l'], }, 
+  130: { ans: '大學同學', id: ['rect-l1r'], }, 
+  140: { ans: '大學學生會', id: ['rect-l2r', 'rect-l2l'], }, 
 }

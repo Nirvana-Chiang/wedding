@@ -18,7 +18,7 @@
   position: relative;
   background-image: url('/assets/cover01.jpg');
   /* background-size: 100% 100%; */
-  background-size: 310%;
+  background-size: cover;
   background-position: 50% 14%;
   background-repeat: no-repeat;
   background-attachment: fixed; 
@@ -85,4 +85,33 @@
   text-decoration-style: wavy;
   text-decoration-color: var(--light-blue);  /* 👈 可以改顏色 */
   text-underline-offset: 4px; /* 👈 距離文字的距離 */
+}
+
+@media (width > 768px) {
+  .welcome-txt {
+    font-size: 48px;
+  }
+
+  .welcome-ch {
+    font-size: 24px;
+  }
+  .date-txt {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .hash-button {
+    font-size: 18px;
+    font-family: "DotGothic16", sans-serif;
+    border: none;
+    padding: 4px;
+    margin-left: 4px;
+  } 
+  .welcome-div {
+    left: 64px;
+  }
+  .date-div {
+    right: 40px;
+  }
+
 }
